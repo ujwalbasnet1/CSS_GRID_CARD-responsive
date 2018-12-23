@@ -1,0 +1,48 @@
+body {
+  padding: 0;
+  margin: 0;
+  background: #587758;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 10px;
+  margin: 2rem;
+}
+
+.grid .item {
+  background: #ddd;
+  border-radius: 3px;
+}
+
+.grid .item img {
+  max-width: 100%;
+}
+
+.grid .item .poem-title {
+  font-weight: bold;
+}
+
+.grid .item .poem-category {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.card {
+  /* Add shadows to create the "card" effect */
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  padding: .5rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.card:hover {
+  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+/*# sourceMappingURL=style.css.map */
